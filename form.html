@@ -5,51 +5,61 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body{
+            background-color: cornflowerblue;
+        }
+        h1{
+            font: bolder;
+            color: whitesmoke;
+        }
+       .login-container{
+            display: flex;
+            flex-direction: column;
+            padding: 18px;
+        }
+        .form-container{
+            display: flex;
+            justify-content: center;
+        }
+        input , button {
+            padding: 5px;
+        }
+        button{
+            color: cornflowerblue;
+            font-weight: 700;
+        }
+        
+        nav{
+            display: flex;
+            justify-content: space-between;
+        }
+        a{
+            text-decoration: none;
+            color: whitesmoke;
+            font-weight: 700;
+        }
+    </style>
 </head>
 <body>
-    <h1>pitha ghor</h1>
-    <form action="">
-        <p>Name:<input type="text" name="name" placeholder="Enter your name" id=""></p>
-        <p>Email:<input type="text" name="email" placeholder="Enter your email" id=""></p>
-        <fieldset>
-            <legend>choose your pitha</legend>
-            <p>
-                <label for="chitoy">
-                    <input type="radio" name="pitha" id="chitoy">chitoy</label>
-            </p>
-            <p>
-                <label for="vapa">
-                    <input type="radio" name="pitha" id="vapa">vapa</label>
-            </p>
-            <p>
-                <label for="bibi khana">
-                    <input type="radio" name="pitha" id="bibi khana">bibi khana</label>
-            </p>
-            <p>
-                <label for="puli"><input type="radio" name="pitha" id="puli">puli</label>
-            </p>
-            <p>
-                <label for="patisapta"><input type="radio" name="pitha" id="patisapta">patisapta</label>
-            </p>
-        </fieldset>
-        <fieldset>
-            <legend>selet your vorta</legend>
-            <p>
-                <label for="morich"><input type="checkbox" name="vorta" id="morich">morich</label>
-            </p>
-            <p>
-                <label for="sorisa"><input type="checkbox" name="vorta" id="sorisa">sorisa</label>
-            </p>
-            <p>
-                <label for="shutki"><input type="checkbox" name="vorta" id="shutki">shutki</label>
-            </p>
-        </fieldset>
-        <p>special instruction
-            <br>
-            <textarea name="" id="" cols="30" rows="10"></textarea>
-        </p>
-        <button type="submit">submit</button>
-        <button type="reset">reset</button>
-    </form>
+    <nav>
+        <span>
+            <a href="" class="home">home</a>
+            <a href="" class="home">admission</a>
+            <a href="" class="home">contact</a>
+            <a href="" class="home">about us</a>
+        </span>
+        <span>
+            <a href="" class="icon">Icon</a>
+        </span>
+    </nav>
+    <section class="form-container">
+        <form = action"" class="login-container">
+            <h1>Faebook</h1><br>
+            <input type="email" name="Email" placeholder="write your email" id=""><br>
+            <input type="password" name="Password" placeholder="password" id=""><br>
+            <button type="submit">Login</button>
+        </form>
+    </section>
 </body>
 </html>
